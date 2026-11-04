@@ -18,14 +18,14 @@ It allows users to scan codes from images or videos and identify the website URL
 
 - Python
 - Pyzbar
-- OpenCV (if used)
+- OpenCV 
 
 ## Getting Started
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/NEBULA.git
+git clone https://github.com/bedangjoshi7-pixel/NEBULA.git
 ```
 
 ### Navigate to the project directory
