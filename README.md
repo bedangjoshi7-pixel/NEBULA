@@ -1,17 +1,18 @@
 # NEBULA
 
-### Barcode & QR Code Scanner
+### QR Code & Barcode Scanner
 
-NEBULA is a lightweight barcode and QR code reader built with Python and Pyzbar. It detects, scans, and decodes supported barcodes and QR codes, allowing users to quickly extract encoded information.
+NEBULA is a Python-based QR code and barcode scanner that extracts and displays encoded information from still images and video footage.
 
----
+It allows users to scan codes from images or videos and identify the website URLs encoded within QR codes. Instead of automatically redirecting users, NEBULA displays the extracted URL, leaving the decision to visit the website entirely up to them.
 
 ## Features
 
-- Barcode detection and decoding
-- QR code detection and decoding
-- Fast and efficient scanning
-- Simple and lightweight implementation
+- **Image Scanning** — Detect QR codes and barcodes from still images.
+- **Video Scanning** — Detect and scan codes from video footage.
+- **URL Extraction** — Extract website URLs encoded in QR codes.
+- **URL Display** — Display extracted URLs without automatically redirecting users.
+- **Barcode Decoding** — Decode supported barcode formats.
 
 ## Built With
 
@@ -36,10 +37,10 @@ cd NEBULA
 ### Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install opencv-python pyzbar
 ```
 
-### Run the application
+### Run NEBULA
 
 ```bash
 python main.py
@@ -51,20 +52,20 @@ python main.py
 NEBULA/
 │
 ├── main.py
-├── requirements.txt
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
 ## Preview
 
-Screenshots of NEBULA will be added here.
+Screenshots and demonstrations of NEBULA will be added here.
 
 ## Future Improvements
 
-- Support for additional barcode formats
-- Scan history
-- Export decoded results
-- Improved scanning interface
+- Support for additional barcode formats.
+- Improved detection accuracy.
+- Scan history.
+- Option to open extracted URLs manually.
 
 ---
 
