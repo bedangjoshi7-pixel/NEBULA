@@ -49,9 +49,7 @@ pip install opencv-python pyzbar pysafebrowsing
 
 NEBULA requires a Google Safe Browsing API key for URL verification.
 
-Obtain an API key through Google Cloud Console and configure it as an environment variable named `SAFE_BROWSING_API_KEY`.
-
-Never publish your API key in the repository.
+Obtain an API key through Google Cloud Console.
 
 ### Run NEBULA
 
