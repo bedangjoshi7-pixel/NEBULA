@@ -21,15 +21,19 @@ It also integrates **Google Safe Browsing** to check decoded website URLs agains
 - Python
 - OpenCV
 - Pyzbar
+<<<<<<< HEAD
 - PySafeBrowsing
 - Google Safe Browsing API
+=======
+- OpenCV 
+>>>>>>> 66c37698672343d5bafe77fc7fd8454d309c0d38
 
 ## Getting Started
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/NEBULA.git
+git clone https://github.com/bedangjoshi7-pixel/NEBULA.git
 ```
 
 ### Navigate to the project directory
