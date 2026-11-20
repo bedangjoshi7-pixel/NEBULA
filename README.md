@@ -2,23 +2,27 @@
 
 ### QR Code & Barcode Scanner
 
-NEBULA is a Python-based QR code and barcode scanner that extracts and displays encoded information from still images and video footage.
+NEBULA is a Python-based QR code and barcode scanner that detects, decodes, and extracts information from QR codes and barcodes.
 
-It allows users to scan codes from images or videos and identify the website URLs encoded within QR codes. Instead of automatically redirecting users, NEBULA displays the extracted URL, leaving the decision to visit the website entirely up to them.
+It also integrates **Google Safe Browsing** to check decoded website URLs against known malicious websites, helping users make more informed decisions before visiting potentially unsafe destinations.
 
 ## Features
 
 - **Image Scanning** — Detect QR codes and barcodes from still images.
-- **Video Scanning** — Detect and scan codes from video footage.
+- **Video Scanning** — Detect and scan codes from video footage and webcam streams.
 - **URL Extraction** — Extract website URLs encoded in QR codes.
-- **URL Display** — Display extracted URLs without automatically redirecting users.
-- **Barcode Decoding** — Decode supported barcode formats.
+- **URL Verification** — Check extracted URLs using Google Safe Browsing.
+- **Malicious URL Detection** — Identify URLs reported as potentially malicious.
+- **User Confirmation** — Ask users for confirmation before opening URLs flagged as unsafe.
+- **Barcode Decoding** — Decode supported QR code and barcode formats.
 
 ## Built With
 
 - Python
+- OpenCV
 - Pyzbar
-- OpenCV (if used)
+- PySafeBrowsing
+- Google Safe Browsing API
 
 ## Getting Started
 
@@ -37,8 +41,16 @@ cd NEBULA
 ### Install dependencies
 
 ```bash
-pip install opencv-python pyzbar
+pip install opencv-python pyzbar pysafebrowsing
 ```
+
+### Configure Google Safe Browsing
+
+NEBULA requires a Google Safe Browsing API key for URL verification.
+
+Obtain an API key through Google Cloud Console and configure it as an environment variable named `SAFE_BROWSING_API_KEY`.
+
+Never publish your API key in the repository.
 
 ### Run NEBULA
 
@@ -65,7 +77,8 @@ Screenshots and demonstrations of NEBULA will be added here.
 - Support for additional barcode formats.
 - Improved detection accuracy.
 - Scan history.
-- Option to open extracted URLs manually.
+- Enhanced URL security verification.
+- Improved user interface.
 
 ---
 
