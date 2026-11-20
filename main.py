@@ -33,10 +33,8 @@ while True:
                             (255, 0, 0), 2)
                     print(hex_value)
                     if hex_value:
-                        #    action = input("You want to Open the URL ? y/n = 'Yes/No :  ").lower()
                            safe_browsing(hex_value)
-                        #    if action in ['y','yes','yup','yeah']:
-                                #  wb.open_new_tab(hex_value)
+                        
             cv.imshow("WebCam",frame)
             if cv.waitKey(20) & 0xFF == ord('q'):
                 break
