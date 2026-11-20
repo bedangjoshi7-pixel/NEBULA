@@ -21,12 +21,9 @@ It also integrates **Google Safe Browsing** to check decoded website URLs agains
 - Python
 - OpenCV
 - Pyzbar
-<<<<<<< HEAD
 - PySafeBrowsing
 - Google Safe Browsing API
-=======
 - OpenCV 
->>>>>>> 66c37698672343d5bafe77fc7fd8454d309c0d38
 
 ## Getting Started
 
