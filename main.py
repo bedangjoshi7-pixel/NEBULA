@@ -4,7 +4,7 @@ import webbrowser as wb
 from pysafebrowsing import SafeBrowsing
 
 def safe_browsing(URL):
-    API_Key = "AIzaSyBuFNRfwwSsonCrEQgLsAax3EL9NBMEPeI"
+    API_Key = "Your_API_KEY"          #<--- Look at README.md on How to get your own API Key. 
     s = SafeBrowsing(API_Key)
 
     response = s.lookup_urls([URL])
